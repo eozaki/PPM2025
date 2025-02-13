@@ -44,6 +44,18 @@ object Fun {
     return names.head + " " + names.last
   }
 
+  def ex2eRec(name: List[String]): String = {
+    name.head + " " + lastName(name.tail)
+  }
+
+  def lastName(list: List[String]): String = {
+    if(list.length == 1) {
+      list.head
+    } else {
+      lastName(list.tail)
+    }
+  }
+
   def ex3a(x: Int, y: Int): Int = if(y == 1) return x; else return x * ex3a(x, y - 1)
 
   def ex3b(list: List[Int]): (Int, Int) = {
