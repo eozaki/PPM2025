@@ -37,7 +37,7 @@ object Fun {
     }
   }
 
-  def ex2d(a: Int, b: Int, c: Int): Boolean = a + b > c || a + c > b || b + c > a
+  def ex2d(a: Int, b: Int, c: Int): Boolean = a + b > c && a + c > b && b + c > a
 
   def ex2e(name: String): String = {
     val names = name.split(" ")
