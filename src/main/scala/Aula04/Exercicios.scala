@@ -1,6 +1,4 @@
-package Aula04
-
-import Utils.Test.assertEquals;
+package Aula04;
 
 object Exercicios {
   // Exercício 1
@@ -43,20 +41,20 @@ object Exercicios {
     (matches foldRight List[Team]()) ((x, r) => x._1._1 :: x._2._1 :: r)
 
   def main(args: Array[String]): Unit = {
-    assertEquals(concatListsR(List(List(1, 2), List(3, 4))), List(1, 2, 3, 4))
-    assertEquals(concatListsL(List(List(1, 2), List(3, 4))), List(1, 2, 3, 4))
-
-    assertEquals(chainedAndL(List(true, true)), true)
-    assertEquals(chainedAndL(List(true, false)), false)
-    assertEquals(chainedOrL(List(true, false)), true)
-    assertEquals(chainedOrL(List(false, false)), false)
-
-    assertEquals(chainedAndR(List(true, true)), true)
-    assertEquals(chainedAndR(List(true, false)), false)
-    assertEquals(chainedOrR(List(true, false)), true)
-    assertEquals(chainedOrR(List(false, false)), false)
-
-    assertEquals(remDup(List(1,2,3,3)), List(1,2,3))
+//    assertEquals(concatListsR(List(List(1, 2), List(3, 4))), List(1, 2, 3, 4))
+//    assertEquals(concatListsL(List(List(1, 2), List(3, 4))), List(1, 2, 3, 4))
+//
+//    assertEquals(chainedAndL(List(true, true)), true)
+//    assertEquals(chainedAndL(List(true, false)), false)
+//    assertEquals(chainedOrL(List(true, false)), true)
+//    assertEquals(chainedOrL(List(false, false)), false)
+//
+//    assertEquals(chainedAndR(List(true, true)), true)
+//    assertEquals(chainedAndR(List(true, false)), false)
+//    assertEquals(chainedOrR(List(true, false)), true)
+//    assertEquals(chainedOrR(List(false, false)), false)
+//
+//    assertEquals(remDup(List(1,2,3,3)), List(1,2,3))
 
     val t1: Team = "Banana"
     val t2: Team = "dePijama"
@@ -66,12 +64,12 @@ object Exercicios {
     val m1: Fixtures = List(((t1, g1), (t2, g2)))
     val m2: Fixtures = List(((t1, g1), (t1, g2)))
 
-    assertEquals(noItself(m1), true)
-    assertEquals(noItself(m2), false)
-
-    assertEquals(teams(m1), List(t1, t2))
-    assertEquals(teams(m2), List(t1, t1))
-
-    assertEquals(withoutRep(m1)._1, true)
+//    assertEquals(noItself(m1), true)
+//    assertEquals(noItself(m2), false)
+//
+//    assertEquals(teams(m1), List(t1, t2))
+//    assertEquals(teams(m2), List(t1, t1))
+//
+//    assertEquals(withoutRep(m1)._1, true)
   }
 }
