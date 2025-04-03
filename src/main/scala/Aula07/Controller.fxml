@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Aula07.Controller">
+   <children>
+      <Button fx:id="button1" layoutX="263.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#onButton1Clicked" text="Clica aqui!" />
+      <TextField fx:id="textField1" layoutX="220.0" layoutY="243.0" />
+   </children>
+</AnchorPane>
